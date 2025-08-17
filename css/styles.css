@@ -64,6 +64,8 @@ SELF-HOSTING FONT:
   background-color: var(--clr-grey900);
   width: 248px;
   border-radius: var(--10px);
+
+  position: relative;
 }
 .share-component__text {
   color: var(--clr-grey400);
@@ -76,6 +78,19 @@ SELF-HOSTING FONT:
   gap: var(--16px);
 }
 .share-component__social-icon {
+}
+
+.triangle-decor {
+  width: 0;
+  height: 0;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+
+  border-top: 12px solid var(--clr-grey900);
+
+  position: absolute;
+  bottom: -12px;
+  left: 112px;
 }
 /* 
 ********************************
