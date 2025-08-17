@@ -71,6 +71,7 @@ GLOBAL CSS VALUES:
   margin: 0;
   padding: 0;
   font-family: inherit;
+  font-weight: inherit;
 }
 
 body {
@@ -80,8 +81,7 @@ body {
   line-height: 1.4;
   letter-spacing: 0.12px;
 
-  background-color: hotpink;
-  /* color: ; */
+  background-color: var(--clr-grey200);
 }
 
 img,
@@ -98,10 +98,93 @@ svg {
 MAIN:
 ********************************
 */
-h1 {
-  font-size: var(--24px);
-  text-align: center;
-  color: var(--clr-slate);
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.card {
+  display: flex;
+  max-width: 730px;
+  height: 280px;
+  border-radius: var(--10px);
+  background-color: white;
+}
+.card-container-img {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+  overflow: hidden;
+  width: 285px;
+}
+
+.card__image {
+  object-fit: cover;
+  object-position: 0.1px;
+}
+.card-container-text {
+  max-width: 445px;
+  padding: var(--30px) var(--40px);
+  display: flex;
+  flex-direction: column;
+  gap: var(--24px);
+}
+.card__title {
+  color: var(--clr-grey900);
+  font-size: var(--20px);
+  line-height: 1.3;
+  letter-spacing: 0.25px;
+  font-weight: 700;
+}
+.card__description {
+  color: var(--clr-grey500);
+}
+.card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__footer-left {
+  display: flex;
+  gap: var(--16px);
+}
+.card__author-avatar {
+  border-radius: 50%;
+}
+.card__author-text-container {
+}
+.card__author-name {
+  color: var(--clr-grey900);
+  font-weight: 700;
+}
+.card__date {
+  color: var(--clr-grey400);
+}
+.card__btn {
+  border-radius: 50%;
+  border: none;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.1s;
+}
+
+.card__btn-svg {
+  width: 15px;
+  height: 15px;
+}
+
+.card__btn:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.card__btn:active {
+  scale: 0.95;
 }
 
 /* 
