@@ -55,6 +55,28 @@ SELF-HOSTING FONT:
   font-display: swap;
 }
 
+.share-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 38px;
+  gap: var(--24px);
+  background-color: var(--clr-grey900);
+  width: 248px;
+  border-radius: var(--10px);
+}
+.share-component__text {
+  color: var(--clr-grey400);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.share-component__social-icons-container {
+  display: flex;
+  align-items: center;
+  gap: var(--16px);
+}
+.share-component__social-icon {
+}
 /* 
 ********************************
 GLOBAL CSS VALUES:
