@@ -39,11 +39,32 @@ This is a solution to [this challenge on Frontend Mentor](https://www.frontendme
 
 In this particular project:
 
-1.
+1. I greatly improved my understanding of `stopPropagation()` and how it prevents the event from moving up the DOM tree to parent elements and triggering their event listeners. Particularly useful for pop-up menus (in this case it was the simple share menu).
 
-```css
-<Code proud of>
+2. I knew there must be an easier way than checking IF the event was not the menu and IF it did not already contain the class I wanted... So I asked ChatGPT to create a basic box and "Add a function so that if anywhere else on page is clicked, the box will always disappear" and then went into a deep dive on `stopPropagation()`. I was then able to apply this to my own code. So this:
+
+```js
+function hideShare() {
+  shareMenu.classList.add("hidden");
+  if (e.target !== shareMenu) {
+    if (!btn.classList.contains("hidden")) shareMenu.classList.add("hidden");
+  }
+}
 ```
+
+BECAME THIS >>>
+
+```js
+function hideShare() {
+  shareMenu.classList.add("hidden");
+}
+
+function preventBubble(e) {
+  e.stopPropagation();
+}
+```
+
+3.
 
 ### Continued Development
 
@@ -71,3 +92,4 @@ After submitting this project, I wish to develop the following:
 
 <br/>
 # fm-article-preview-component-
+```
