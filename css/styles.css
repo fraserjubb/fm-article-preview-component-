@@ -55,43 +55,6 @@ SELF-HOSTING FONT:
   font-display: swap;
 }
 
-.share-component {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 38px;
-  gap: var(--24px);
-  background-color: var(--clr-grey900);
-  width: 248px;
-  border-radius: var(--10px);
-
-  position: relative;
-}
-.share-component__text {
-  color: var(--clr-grey400);
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-}
-.share-component__social-icons-container {
-  display: flex;
-  align-items: center;
-  gap: var(--16px);
-}
-.share-component__social-icon {
-}
-
-.triangle-decor {
-  width: 0;
-  height: 0;
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
-
-  border-top: 12px solid var(--clr-grey900);
-
-  position: absolute;
-  bottom: -12px;
-  left: 112px;
-}
 /* 
 ********************************
 GLOBAL CSS VALUES:
@@ -141,6 +104,11 @@ MAIN:
   height: 100vh;
   align-items: center;
 }
+
+.hidden {
+  display: none;
+}
+
 .card {
   display: flex;
   max-width: 730px;
@@ -157,7 +125,8 @@ MAIN:
 
 .card__image {
   object-fit: cover;
-  object-position: 0.1px;
+  /* object-position: 0.1px; */
+  object-position: left;
 }
 .card-container-text {
   max-width: 445px;
@@ -222,6 +191,53 @@ MAIN:
 
 .card__btn:active {
   scale: 0.95;
+}
+
+.share-component {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 38px;
+  gap: var(--24px);
+  background-color: var(--clr-grey900);
+  width: 248px;
+  border-radius: var(--10px);
+
+  position: relative;
+}
+.share-component__text {
+  color: var(--clr-grey400);
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+}
+.share-component__social-icons-container {
+  display: flex;
+  align-items: center;
+  gap: var(--16px);
+}
+.share-component__social-icon {
+}
+
+.share-component::after {
+  /* display: none; */
+  content: "";
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+
+  border-top: 12px solid var(--clr-grey900);
+
+  position: absolute;
+  bottom: -12px;
+  left: 112px;
+}
+
+.speech-bubble {
+  position: relative;
+  background: #00aabb;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  width: fit-content;
 }
 
 /* 
