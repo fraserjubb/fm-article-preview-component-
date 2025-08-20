@@ -105,10 +105,6 @@ MAIN:
   align-items: center;
 }
 
-.hidden {
-  display: none;
-}
-
 .card {
   display: flex;
   max-width: 730px;
@@ -270,4 +266,13 @@ FOOTER:
 .attribution a:hover,
 .attribution a:active {
   opacity: 75%;
+}
+
+/* 
+********************************
+UTILITY CLASSES:
+********************************
+*/
+.hidden {
+  display: none;
 }
