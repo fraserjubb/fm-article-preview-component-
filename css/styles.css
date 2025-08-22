@@ -189,6 +189,10 @@ MAIN:
   scale: 0.95;
 }
 
+.relative {
+  position: relative;
+}
+
 .share-component {
   display: flex;
   justify-content: space-between;
@@ -199,7 +203,10 @@ MAIN:
   width: 248px;
   border-radius: var(--10px);
 
-  position: relative;
+  position: absolute;
+
+  top: -80px;
+  left: -105px;
 }
 .share-component__text {
   color: var(--clr-grey400);
