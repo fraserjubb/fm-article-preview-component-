@@ -208,7 +208,7 @@ MAIN:
   justify-content: space-between;
   align-items: center;
   padding: 17.5px 38px;
-  gap: var(--24px);
+  /* gap: var(--24px); */
   background-color: var(--clr-grey900);
   width: 248px;
   border-radius: var(--10px);
