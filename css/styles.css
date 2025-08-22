@@ -105,6 +105,7 @@ MAIN:
   align-items: center;
 }
 
+/* *** CARD MAIN *** */
 .card {
   display: flex;
   max-width: 730px;
@@ -112,6 +113,8 @@ MAIN:
   border-radius: var(--10px);
   background-color: white;
 }
+
+/* Card Left: Picture */
 .card-container-img {
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
@@ -121,9 +124,10 @@ MAIN:
 
 .card__image {
   object-fit: cover;
-  /* object-position: 0.1px; */
   object-position: left;
 }
+
+/* Card Right: Text Content */
 .card-container-text {
   max-width: 445px;
   padding: var(--30px) var(--40px);
@@ -141,12 +145,15 @@ MAIN:
 .card__description {
   color: var(--clr-grey500);
 }
+
+/* *** CARD FOOTER *** */
 .card__footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Left card footer */
 .card__footer-left {
   display: flex;
   gap: var(--16px);
@@ -163,6 +170,12 @@ MAIN:
 .card__date {
   color: var(--clr-grey400);
 }
+
+/* Right card footer */
+.relative {
+  position: relative;
+}
+
 .card__btn {
   border-radius: 50%;
   border: none;
@@ -189,15 +202,12 @@ MAIN:
   scale: 0.95;
 }
 
-.relative {
-  position: relative;
-}
-
+/* Share Menu Component */
 .share-component {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 38px;
+  padding: 17.5px 38px;
   gap: var(--24px);
   background-color: var(--clr-grey900);
   width: 248px;
@@ -205,7 +215,7 @@ MAIN:
 
   position: absolute;
 
-  top: -80px;
+  top: -85px;
   left: -105px;
 }
 .share-component__text {
@@ -234,18 +244,9 @@ MAIN:
   left: 112px;
 }
 
-.speech-bubble {
-  position: relative;
-  background: #00aabb;
-  color: white;
-  padding: 15px;
-  border-radius: 10px;
-  width: fit-content;
-}
-
 /* 
 ********************************
-FOOTER:
+PAGE FOOTER:
 ********************************
 */
 
