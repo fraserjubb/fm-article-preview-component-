@@ -64,7 +64,15 @@ function preventBubble(e) {
 }
 ```
 
-3.
+3. Using left, right and center is better than using exact pixels for object-position (in many cases).
+
+```css
+.card__image {
+  object-fit: cover;
+  /* object-position: 0.1px; */
+  object-position: left;
+}
+```
 
 ### Continued Development
 
