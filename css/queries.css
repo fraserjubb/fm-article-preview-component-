@@ -1,3 +1,31 @@
-.attribution {
-  margin-top: var(--40px);
+@media (max-width: 800px) {
+  .card {
+    max-width: 608px;
+    height: 346px;
+  }
+
+  .card-container-img {
+    width: 229px;
+  }
+
+  .card__image {
+    height: 346px;
+    object-fit: fill;
+  }
+
+  .card-container-text {
+    max-width: 379px;
+    padding: 41px 34px;
+  }
+
+  .share-component {
+    padding: 17.5px 0px;
+    width: 200px;
+    justify-content: center;
+    gap: 15px;
+  }
 }
+
+/* .attribution {
+  margin-top: var(--40px);
+} */
