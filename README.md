@@ -78,7 +78,7 @@ function preventBubble(e) {
 
 After submitting this project, I wish to develop the following:
 
-1. <text>
+1. In this project I tried to match comment headings in CSS with comment headings in my html. This was to make it easier to quickly figure out the location for relevant sections of code. Unsure if this practice will work for larger projects, but something I wanted to make a not of so that I can try it again going forward.
 
 ### Useful Resources
 
