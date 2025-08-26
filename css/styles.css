@@ -108,8 +108,8 @@ MAIN:
 /* *** CARD MAIN *** */
 .card {
   display: flex;
-  max-width: 730px;
-  height: 280px;
+  max-width: 45.63rem;
+  height: 17.5rem;
   border-radius: var(--10px);
   background-color: white;
 }
@@ -119,7 +119,7 @@ MAIN:
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
   overflow: hidden;
-  width: 285px;
+  width: 17.81rem;
 }
 
 .card__image {
@@ -129,7 +129,7 @@ MAIN:
 
 /* Card Right: Text Content */
 .card-container-text {
-  max-width: 445px;
+  max-width: 27.81rem;
   padding: var(--30px) var(--40px);
   display: flex;
   flex-direction: column;
@@ -175,8 +175,8 @@ MAIN:
 .card__btn {
   border-radius: 50%;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: var(--32px);
+  height: var(--32px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,8 +185,8 @@ MAIN:
 }
 
 .card__btn-svg {
-  width: 15px;
-  height: 15px;
+  width: 0.9375rem;
+  height: 0.9375rem;
 }
 
 .card__btn:hover {
@@ -207,16 +207,16 @@ MAIN:
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 17.5px 38px;
+  padding: 1.063rem var(--38px);
   gap: var(--24px);
   background-color: var(--clr-grey900);
-  width: 248px;
+  width: 15.5rem;
   border-radius: var(--10px);
 
   position: absolute;
 
-  top: -85px;
-  left: -105px;
+  top: -5.313rem;
+  left: -6.563rem;
 }
 .share-component__text {
   color: var(--clr-grey400);
@@ -234,14 +234,14 @@ MAIN:
 .share-component::after {
   /* display: none; */
   content: "";
-  border-left: 12px solid transparent;
-  border-right: 12px solid transparent;
+  border-left: var(--12px) solid transparent;
+  border-right: var(--12px) solid transparent;
 
-  border-top: 12px solid var(--clr-grey900);
+  border-top: var(--12px) solid var(--clr-grey900);
 
   position: absolute;
-  bottom: -12px;
-  left: 112px;
+  bottom: -0.75rem;
+  left: 7rem;
 }
 
 /* 
