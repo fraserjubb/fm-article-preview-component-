@@ -172,10 +172,6 @@ MAIN:
 }
 
 /* Right card footer */
-.relative {
-  position: relative;
-}
-
 .card__btn {
   border-radius: 50%;
   border: none;
@@ -203,12 +199,16 @@ MAIN:
 }
 
 /* Share Menu Component */
+.relative {
+  position: relative;
+}
+
 .share-component {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 17.5px 38px;
-  /* gap: var(--24px); */
+  gap: var(--24px);
   background-color: var(--clr-grey900);
   width: 248px;
   border-radius: var(--10px);
