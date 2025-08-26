@@ -185,8 +185,7 @@ MAIN:
 }
 
 .card__btn-svg {
-  width: 0.9375rem;
-  height: 0.9375rem;
+  fill: var(--clr-grey500);
 }
 
 .card__btn:hover {
