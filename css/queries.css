@@ -99,6 +99,8 @@ MOBILE:
     border-top-right-radius: 0;
 
     gap: var(--24px);
+
+    box-shadow: 0;
   }
 
   .share-component__social-icons-container {
