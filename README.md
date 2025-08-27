@@ -23,8 +23,8 @@ This is a solution to [this challenge on Frontend Mentor](https://www.frontendme
 
 ### Project Links
 
-- Solution URL: [Click Here](url)
-- Live Site URL: [Click Here](url)
+- Solution URL: [Click Here](https://www.frontendmentor.io/solutions/article-preview-component-solution---challenge-10-2e516AKY3f)
+- Live Site URL: [Click Here](https://fm-articlepreviewcomponent-fraser.netlify.app/)
 - Frontend Mentor Profile: [@fraserjubb](https://www.frontendmentor.io/profile/fraserjubb)
 
 ## My Process
@@ -39,7 +39,7 @@ This is a solution to [this challenge on Frontend Mentor](https://www.frontendme
 
 In this particular project:
 
-1. This was my first time working on a JavaScript project that was not part of a video course where I follow tutorials. It felt good.
+1. This was my first time working on a JavaScript project that was not part of a video course where I follow tutorials. It felt good. I also gave myself an extension goal of making the share options disappear when either 1) The button is clicked again or 2) Anywhere else outside the share menu is clicked.
 
 2. I greatly improved my understanding of `stopPropagation()` and how it prevents the event from moving up the DOM tree to parent elements and triggering their event listeners. Particularly useful for pop-up menus (in this case it was the simple share menu).
 
@@ -76,13 +76,15 @@ function preventBubble(e) {
 }
 ```
 
+4. In this project, I was having issues with my 'hidden' class when I moved it toward the top of the code. Ensuring Utility Classes are at the bottom of my CSS file (or for future projects, in a separate 'utilities' file that is loaded last) makes sure that it is not overwritten.
+
 ### Continued Development
 
 After submitting this project, I wish to develop the following:
 
 1. In this project I tried to match comment headings in CSS with comment headings in my html. This was to make it easier to quickly figure out the location for relevant sections of code. Unsure if this practice will work for larger projects, but something I wanted to make a note of so that I can try it again going forward in future projects.
 
-2. As noted earlier, this was my first time using AI (ChatGPT) to assist when I was troubleshooting my code. I was careful to 1) Not include any actual code from my project and 2) Treat it similarly to MDN documentation where I try and breakdown the problem and understand it so I can then apply it to the code myself. I do not intend to have ChatGPT to write my code at any point (other than very basic boilerplates) or to read my own code as this could lead to problems - both in the code itself and it's origin.
+2. As noted earlier, this was my first time using AI (ChatGPT) to assist when I was troubleshooting my code. I was careful to 1) Not include any actual code from my project and 2) Treat it similarly to MDN documentation where I try to break down the problem and understand it so I can then apply it to the code myself. I do not intend to have ChatGPT to write my code at any point (other than very basic boilerplates) or to read my own code as this could lead to problems - both in the code itself and its origin.
 
 ### Useful Resources
 
