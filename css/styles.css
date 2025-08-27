@@ -231,11 +231,11 @@ MAIN:
   align-items: center;
   gap: var(--16px);
 }
-.share-component__social-icon {
+.share-component__social-icon:hover {
+  opacity: 75%;
 }
 
 .share-component::after {
-  /* display: none; */
   content: "";
   border-left: var(--12px) solid transparent;
   border-right: var(--12px) solid transparent;
